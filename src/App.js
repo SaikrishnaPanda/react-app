@@ -4,6 +4,7 @@ import Emp from "./components/Emp";
 import User from "./components/User";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Post from "./components/Post";
+import Todo from "./components/Todo";
 
 export default class App extends Component{
   /* Which function does react call : render() */
@@ -14,7 +15,8 @@ export default class App extends Component{
         <hr />
         <Emp /> */}
         {/* <User /> */}
-        <Post />
+        {/* <Post /> */}
+        <Todo />
       </div>
     )
   }
