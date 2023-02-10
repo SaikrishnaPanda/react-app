@@ -5,6 +5,7 @@ import User from "./components/User";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Post from "./components/Post";
 import Todo from "./components/Todo";
+import SignUp from "./components/SignUp";
 
 export default class App extends Component{
   /* Which function does react call : render() */
@@ -16,7 +17,8 @@ export default class App extends Component{
         <Emp /> */}
         {/* <User /> */}
         {/* <Post /> */}
-        <Todo />
+        {/* <Todo /> */}
+        <SignUp />
       </div>
     )
   }
