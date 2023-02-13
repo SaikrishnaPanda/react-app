@@ -9,6 +9,7 @@ import SignUp from "./components/SignUp";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import PageNotFound from "./components/PageNotFound";
+import SignUpTest from "./components/SignUpTest";
 
 export default class App extends Component{
   /* Which function does react call : render() */
@@ -16,7 +17,7 @@ export default class App extends Component{
     return (
       <div>
         <Navbar />
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={ <Arry />} />
           <Route path="/posts" element={ <Post />} />
           <Route path="/employee" element={ <Emp />} />
@@ -24,7 +25,8 @@ export default class App extends Component{
           <Route path="/sign-up" element={ <SignUp />} />
           <Route path="/todo" element={ <Todo />} />
           <Route path="*" element={ <PageNotFound />} />
-        </Routes>
+        </Routes> */}
+        <SignUpTest />
       </div>
     )
   }
