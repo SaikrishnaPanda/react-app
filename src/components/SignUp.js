@@ -19,6 +19,8 @@ export default class SignUp extends Component{
     render(){
         return(
             <div>
+                <section>
+                <div>
                 <h1>Sign Up</h1>
                 <span style={{color:'red'}}>{this.state.msg}</span> <br />
                 <label>Enter the name:</label>
@@ -43,6 +45,8 @@ export default class SignUp extends Component{
                 <span style={{color:'red'}}>{this.state.errors['password']}</span>
                 <br /> <br />
                 <button onClick={this.onSignUp}>SignUp</button>
+            </div>
+                </section>
             </div>
         )
     }

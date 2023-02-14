@@ -8,6 +8,8 @@ import Todo from "./components/Todo";
 import SignUp from "./components/SignUp";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
+import { Provider } from "react-redux";
+import {store} from "./store";
 import PageNotFound from "./components/PageNotFound";
 import SignUpTest from "./components/SignUpTest";
 
@@ -16,17 +18,19 @@ export default class App extends Component{
   render(){/* render must return something(JSX) */
     return (
       <div>
+        <Provider store={store}>
         <Navbar />
-        {/* <Routes>
-          <Route path="/" element={ <Arry />} />
+        <Routes>
+          <Route path="/"element ={ <Todo />} />
           <Route path="/posts" element={ <Post />} />
           <Route path="/employee" element={ <Emp />} />
           <Route path="/users" element={ <User />} />
           <Route path="/sign-up" element={ <SignUp />} />
-          <Route path="/todo" element={ <Todo />} />
+          <Route path="/arry" element={ <Arry />} />
           <Route path="*" element={ <PageNotFound />} />
-        </Routes> */}
-        <SignUpTest />
+        </Routes>
+        {/* <SignUpTest /> */}
+        </Provider>
       </div>
     )
   }
